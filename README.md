@@ -42,5 +42,5 @@ The algorithm works as follows:
 - When it finds an operator, it performs the addition and subtraction operation respectively on the operands that come before and after the operator.
 - The `tokens` array is updated by removing the operator and the right operand, and storing the result in the left operand.
 
-The functions then print the updated `tokens` array and return the number of tokens.
+> The functions then print the updated `tokens` array and return the number of tokens. All the functions return the number of tokens left at the end of the process.
 
