@@ -1,6 +1,23 @@
 # String Expression Calculator
 This is a micro project made by Aaditya Thakkar.
 
+## main()
+
+The main function is the entry point of the program and coordinates the overall flow of the program.
+
+The algorithm works as follows:
+
+1. Takes an input string from the user, and stores it in a variable.
+2. Calls the `tokenize` function, passing the input string as an argument.
+3. The `tokenize` function tokenizes the input string into an array of tokens, where each token is either an operator or an operand.
+4. The main function calls the `eval1` function passing the number of tokens as an argument.
+5. The `eval1` function evaluates the '^' and '!' operators by iterating through the `tokens` array from left to right and performs the power and factorial operation respectively on the operands that come before and after the operator.
+6. The main function calls the `eval2` function passing the number of tokens as an argument.
+7. The `eval2` function evaluates the '*','/' and '%' operators by iterating through the `tokens` array from left to right and performs the multiplication, division and modulus operation respectively on the operands that come before and after the operator.
+8. The main function calls the `eval3` function passing the number of tokens as an argument.
+9. The `eval3` function evaluates the '+' and '-' operators by iterating through the `tokens` array from left to right and performs the addition and subtraction operation respectively on the operands that come before and after the operator.
+10. Finally, the main function prints the final result of the evaluation.
+
 ## tokenize() function -> int (numtokens)
 The algorithm used in the `tokenize` function is a simple tokenizing algorithm that separates the input string into an array of tokens, where each token is either an operator or an operand.
 
