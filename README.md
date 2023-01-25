@@ -23,19 +23,20 @@ The algorithm used in the eval1, eval2, and eval3 functions is a simple left-to-
 
 The algorithm works as follows:
 
-1. eval1 function:
+1. eval1() function:
 - Iterates through the `tokens` array from left to right.
 - Looks for '^' and '!' operators.
 - When it finds an operator, it performs the power and factorial operation respectively on the operands that come before and after the operator.
 - The `tokens` array is updated by removing the operator and the right operand, and storing the result in the left operand.
+- Additionally, this function also evaluates the brackets present in the expression first and then stores the result in the same array.
 
-2. eval2 function:
+2. eval2() function:
 - Iterates through the `tokens` array from left to right.
 - Looks for '*','/' and '%' operators.
 - When it finds an operator, it performs the multiplication, division and modulus operation respectively on the operands that come before and after the operator.
 - The `tokens` array is updated by removing the operator and the right operand, and storing the result in the left operand.
 
-3. eval3 function:
+3. eval3() function:
 - Iterates through the `tokens` array from left to right.
 - Looks for '+' and '-' operators.
 - When it finds an operator, it performs the addition and subtraction operation respectively on the operands that come before and after the operator.
