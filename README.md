@@ -15,4 +15,4 @@ The algorithm works as follows:
 8. After the `while` loop, check if the `numBracks` variable is greater than 1. If it is, print an error message and exit the program.
 9. Finally, return the number of tokens in the `tokens` array.
 
-```This function returns the number of tokens present in the expression```
+> This function returns the number of tokens present in the expression
