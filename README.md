@@ -16,3 +16,30 @@ The algorithm works as follows:
 9. Finally, return the number of tokens in the `tokens` array.
 
 > This function returns the number of tokens present in the expression
+
+## eval() functions -> int (numtokens)
+
+The algorithm used in the eval1, eval2, and eval3 functions is a simple left-to-right evaluation algorithm with operator precedence. 
+
+The algorithm works as follows:
+
+1. eval1 function:
+- Iterates through the `tokens` array from left to right.
+- Looks for '^' and '!' operators.
+- When it finds an operator, it performs the power and factorial operation respectively on the operands that come before and after the operator.
+- The `tokens` array is updated by removing the operator and the right operand, and storing the result in the left operand.
+
+2. eval2 function:
+- Iterates through the `tokens` array from left to right.
+- Looks for '*','/' and '%' operators.
+- When it finds an operator, it performs the multiplication, division and modulus operation respectively on the operands that come before and after the operator.
+- The `tokens` array is updated by removing the operator and the right operand, and storing the result in the left operand.
+
+3. eval3 function:
+- Iterates through the `tokens` array from left to right.
+- Looks for '+' and '-' operators.
+- When it finds an operator, it performs the addition and subtraction operation respectively on the operands that come before and after the operator.
+- The `tokens` array is updated by removing the operator and the right operand, and storing the result in the left operand.
+
+The functions then print the updated `tokens` array and return the number of tokens.
+
