@@ -11,7 +11,7 @@ The algorithm works as follows:
 2. Calls the `tokenize` function, passing the input string as an argument.
 3. The `tokenize` function tokenizes the input string into an array of tokens, where each token is either an operator or an operand.
 4. The main function calls the `eval1` function passing the number of tokens as an argument.
-5. The `eval1` function evaluates the '^' and '!' operators by iterating through the `tokens` array from left to right and performs the power and factorial operation respectively on the operands that come before and after the operator.
+5. The `eval1` function evaluates the '^' and '!' operators by iterating through the `tokens` array from left to right and performs the power and factorial operation respectively on the operands that come before and after the operator. It also evaluates the brackets with the help of a temp array.
 6. The main function calls the `eval2` function passing the number of tokens as an argument.
 7. The `eval2` function evaluates the '*','/' and '%' operators by iterating through the `tokens` array from left to right and performs the multiplication, division and modulus operation respectively on the operands that come before and after the operator.
 8. The main function calls the `eval3` function passing the number of tokens as an argument.
