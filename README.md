@@ -1,7 +1,7 @@
 # String Expression Calculator
 This is a micro project made by Aaditya Thakkar.
 
-## tokenize() function -> int
+## tokenize() function -> int (numtokens)
 The algorithm used in the `tokenize` function is a simple tokenizing algorithm that separates the input string into an array of tokens, where each token is either an operator or an operand.
 
 The algorithm works as follows:
